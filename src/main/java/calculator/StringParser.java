@@ -5,7 +5,7 @@ public class StringParser {
     static public String splitString(String input){
         String subString;
         if(input.startsWith("//")&&input.contains("\\n")){
-            subString = input.substring(5);
+            subString = input.substring(input.indexOf("\\n")+2);
             return subString;
         }
         else

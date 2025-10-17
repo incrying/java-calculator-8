@@ -12,7 +12,7 @@ public class Application {
         DelimeterManager delimeterManager = new DelimeterManager();
         NumberManager numberManager = new NumberManager();
 
-        String delimeter = delimeterManager.DelimeterFinder(input);
+        String delimeter = delimeterManager.getDelimeter(input);
         String subString = StringParser.splitString(input);
         List<Integer> numbers = numberManager.numberExtractor(subString,delimeter);
         int result = Adder.add(numbers);
