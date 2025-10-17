@@ -34,7 +34,7 @@ public class DelimeterManager {
     }
 
     private boolean isSpecialCharacter(String input) {
-        String regex = "[|*&^]";
+        String regex = "[|^$+*(){}\\[\\]]";
         if (Pattern.matches(regex, input))
             return true;
         else
